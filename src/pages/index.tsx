@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const links = [
@@ -28,35 +28,45 @@ export default function Home() {
             title: "Karya",
         },
     ];
-    const video = [
+    const logo = [
         {
-            label: "V1",
-            href: "https://www.youtube.com/embed/4UuPGK_cync",
+            label: "Agate",
+            background: "/AgateLogo.png",
         },
         {
-            label: "V2",
-            href: "https://www.youtube.com/embed/XzzUo79LXO4",
-        },
-        {
-            label: "V3",
-            href: "https://www.youtube.com/embed/6BYlu2UbiTc",
-        },
-        {
-            label: "V4",
-            href: "https://www.youtube.com/embed/hUv7BCg5h6s",
+            label: "Gameloft",
+            background: "/gameloftLogo.png",
         },
     ];
+    // const video = [
+    //     {
+    //         label: "V1",
+    //         href: "https://www.youtube.com/embed/4UuPGK_cync",
+    //     },
+    //     {
+    //         label: "V2",
+    //         href: "https://www.youtube.com/embed/XzzUo79LXO4",
+    //     },
+    //     {
+    //         label: "V3",
+    //         href: "https://www.youtube.com/embed/6BYlu2UbiTc",
+    //     },
+    //     {
+    //         label: "V4",
+    //         href: "https://www.youtube.com/embed/hUv7BCg5h6s",
+    //     },
+    // ];
     return (
         <>
             {/* Navbar */}
-            <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-transparent">
+            <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-gray-900">
                 <div className="relative flex items-center justify-between">
                     <a href="#" aria-label="Company" title="Company" className="inline-flex items-center">
-                        <img className="object-cover h-4 sm:h-12 aos-item " data-aos="fade-up" src="/header.webp" alt="" />
+                        <img className="object-cover h-4 sm:h-8 aos-item " data-aos="fade-up" src="/header.webp" alt="" />
                         {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">GAME TECHNOLOGY</span> */}
                     </a>
-                    <ul className=" hidden items-center space-x-8 space-y-4 lg:flex">
-                        <li>
+                    <div className="hidden items-center space-y-4 space-x-10 lg:flex">
+                        <div className="grid grid-cols-5 gap-4">
                             {links.map((item, index) => {
                                 return (
                                     <a key={index} className="font-medium tracking-wide text-yellow-400 transition-colors duration-200 hover:text-deep-purple-accent-400 " href={item.href}>
@@ -64,8 +74,8 @@ export default function Home() {
                                     </a>
                                 );
                             })}
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     <div className="lg:hidden">
                         <button
                             aria-label="Open Menu"
@@ -80,11 +90,11 @@ export default function Home() {
                         </button>
                         {isMenuOpen && (
                             <div className="absolute top-0 left-0 w-full">
-                                <div className="p-5 bg-white border rounded shadow-sm">
+                                <div className="p-5 bg-gray-900 border-gray-800 rounded shadow-lg">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
                                             <a href="#" aria-label="Company" title="Company" className="inline-flex items-center">
-                                                <img className="object-cover h-4 sm:h-14 aos-item" data-aos="fade-up" src="/header.webp" alt="" />
+                                                <img className="object-cover h-4 sm:h-8 aos-item" data-aos="fade-up" src="/header.webp" alt="" />
                                                 {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">GAME TECHNOLOGY</span> */}
                                             </a>
                                         </div>
@@ -103,20 +113,20 @@ export default function Home() {
                                             </button>
                                         </div>
                                     </div>
-                                    <ul className="space-y-8">
-                                        <li>
+                                    <div className="space-y-8">
+                                        <div className=" grid grid-rows-5 gap-5">
                                             {links.map((item, index) => {
                                                 return (
                                                     <a
                                                         key={index}
-                                                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                        className="font-medium tracking-wide text-yellow-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                         href={item.href}>
                                                         {item.label}
                                                     </a>
                                                 );
                                             })}
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         )}
@@ -236,35 +246,52 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="!aspect-video w-full">
+                    <div className="!aspect-video h-full">
                         <iframe
                             src="https://www.youtube.com/embed/GGtgvC7Nq3w"
                             frameBorder="0"
-                            data-aos="fade-up"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen></iframe>
                     </div>
                 </div>
             </div>
-            <section className="py-6 sm:py-12 dark:bg-coolGray-800  lg:py-12 bg-white">
+            {/* <section className="py-6 sm:py-12 lg:py-12 bg-white">
                 <div className="container p-6 mx-auto space-y-8 aos-item__inner">
                     <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                        <article className="flex flex-col d">
-                            <div className="!aspect-video">
-                                <iframe frameBorder="0" data-aos="fade-up" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
-                                    {video.map((item, index) => {
-                                        return (
-                                            <a key={index} className="" href={item.href}>
-                                                {item.label}
-                                            </a>
-                                        );
-                                    })}
-                                </iframe>
-                            </div>
-                        </article>
+                        <div className="flex flex-col">
+                            <iframe frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                                {video.map((item, index) => {
+                                    return (
+                                        <a key={index} className="" href={item.href}>
+                                            {item.label}
+                                        </a>
+                                    );
+                                })}
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section> */}
+            <section className="bg-white pt-7 pb-14">
+                <div className="container px-8 mx-auto sm:px-12 lg:px-20 aos-item__inner">
+                    <h1 className="text-sm font-bold tracking-wide text-center text-gray-800 uppercase mb-7">Partnership</h1>
+                    <div className=" grid items-center justify-center grid-cols-2 g gap-y-8">
+                        <div className="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 gap-4" data-aos="fade-right">
+                            {logo.map((item, index) => {
+                                return (
+                                    <div key={index}>
+                                        <a className=""></a>
+                                        <img src={item.background} alt="" className="h-12" />
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
             </section>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#111827" d="M0,96L120,112C240,128,480,160,720,165.3C960,171,1200,149,1320,138.7L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+            </svg>
         </>
     );
 }
