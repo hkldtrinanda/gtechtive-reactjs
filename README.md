@@ -2,7 +2,7 @@
 
 > This project is created and configured using Yarn, so you might wanna add another dependencies or edit any installed dependencies using Yarn to prevent error and stuff like that.
 
-This Next.js template is using the following system:
+This Website is using the following system:
 
 1. **CSS Framework**: [Tailwind CSS](https://tailwindcss.com/)
 
