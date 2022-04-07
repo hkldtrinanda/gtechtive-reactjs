@@ -28,38 +28,64 @@ export default function Home() {
             title: "Karya",
         },
     ];
+    const footer = [
+        {
+            label: "Supported",
+        },
+        {
+            label: "Media Partners",
+        },
+        {
+            label: "Sponsorship",
+        },
+        {
+            label: "Contact",
+        },
+    ];
+    const footers = [
+        {
+            title: "Polimedia Jakarta",
+            href: "#",
+        },
+        {
+            title: "Sahabat Hima Polimedia JKT",
+            href: "#",
+        },
+        {
+            title: "",
+            href: "#",
+        },
+        {
+            title: "gametechpolimedia@gmail.com",
+            href: "#",
+        },
+    ];
     const logo = [
         {
-            label: "Agate",
             background: "/AgateLogo.png",
         },
         {
-            label: "Gameloft",
             background: "/gameloftLogo.png",
         },
     ];
-    // const video = [
-    //     {
-    //         label: "V1",
-    //         href: "https://www.youtube.com/embed/4UuPGK_cync",
-    //     },
-    //     {
-    //         label: "V2",
-    //         href: "https://www.youtube.com/embed/XzzUo79LXO4",
-    //     },
-    //     {
-    //         label: "V3",
-    //         href: "https://www.youtube.com/embed/6BYlu2UbiTc",
-    //     },
-    //     {
-    //         label: "V4",
-    //         href: "https://www.youtube.com/embed/hUv7BCg5h6s",
-    //     },
-    // ];
+    const video = [
+        {
+            href: "https://www.youtube.com/embed/4UuPGK_cync",
+        },
+        {
+            href: "https://www.youtube.com/embed/XzzUo79LXO4",
+        },
+        {
+            href: "https://www.youtube.com/embed/6BYlu2UbiTc",
+        },
+        {
+            href: "https://www.youtube.com/embed/hUv7BCg5h6s",
+        },
+    ];
     return (
         <>
             {/* Navbar */}
-            <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-gray-900">
+            <div className="px-4 py-5 md:px-24 lg:px-8 mx-auto bg-gray-900">
                 <div className="relative flex items-center justify-between">
                     <a href="#" aria-label="Company" title="Company" className="inline-flex items-center">
                         <img className="object-cover h-4 sm:h-8 aos-item " data-aos="fade-up" src="/header.webp" alt="" />
@@ -255,23 +281,27 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* <section className="py-6 sm:py-12 lg:py-12 bg-white">
+            <section className="py-6 sm:py-12 lg:py-12 bg-white">
                 <div className="container p-6 mx-auto space-y-8 aos-item__inner">
                     <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                        <div className="flex flex-col">
-                            <iframe frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
-                                {video.map((item, index) => {
-                                    return (
-                                        <a key={index} className="" href={item.href}>
-                                            {item.label}
-                                        </a>
-                                    );
-                                })}
-                            </iframe>
+                        <div className="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 gap-4">
+                            {video.map((item, index) => {
+                                return (
+                                    <div key={index}>
+                                        <a className=""></a>
+                                        <iframe
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                            src={item.href}
+                                            className="aspect-w-16 aspect-h-9"></iframe>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
             <section className="bg-white pt-7 pb-14">
                 <div className="container px-8 mx-auto sm:px-12 lg:px-20 aos-item__inner">
                     <h1 className="text-sm font-bold tracking-wide text-center text-gray-800 uppercase mb-7">Partnership</h1>
@@ -292,6 +322,64 @@ export default function Home() {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#111827"  d="M0,96L120,112C240,128,480,160,720,165.3C960,171,1200,149,1320,138.7L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
             </svg>
+            <footer className="bg-gray-900 " id="footer">
+                <div className="container px-6 py-4 mx-auto">
+                    <div className="lg:flex">
+                        <div className="w-full -mx-6 lg:w-2/5">
+                            <div className="px-6">
+                                <div>
+                                    <a href="#" className="text-xl font-bold text-white  font5">
+                                        Game Technology
+                                    </a>
+                                    <br />
+                                    <a href="#" className="text-sm font-bold text-white  font5">
+                                        Politeknik Negeri Media kreatif
+                                    </a>
+                                </div>
+
+                                <p className="max-w-md mt-2 text-white dark:text-gray-400">
+                                    Jl. Srengseng Sawah Raya No.17, RT.8/RW.3, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630.
+                                </p>
+
+                                <div className="flex mt-4 -mx-2">
+                                    <a href="#" className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Linkden">
+                                        <img src="img/icon/instagram.png" alt="" className="block object-contain h-4" />
+                                    </a>
+
+                                    <a href="#" className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Facebook">
+                                        <img src="img/icon/youtube.png" alt="" className="block object-contain h-4" />
+                                    </a>
+
+                                    <a href="#" className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 lg:mt-0 lg:flex-1">
+                            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 text-white">
+                                {footer.map((item, index) => {
+                                    return (
+                                        <a key={index} className="uppercase">
+                                            {item.label}
+                                        </a>
+                                    );
+                                })}
+                                {footers.map((item, index) => {
+                                    return (
+                                        <a key={index} className="block mt-2 text-sm  hover:underline" href={item.href}>
+                                            {item.title}
+                                        </a>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="h-px w-full flex-1 bg-white lg:block"></div>
+                    <div>
+                        <p className="text-center text-white">© GTechtiv 2021 - All rights reserved - Designed by hkldtrinanda</p>
+                    </div>
+                </div>
+            </footer>
         </>
     );
 }

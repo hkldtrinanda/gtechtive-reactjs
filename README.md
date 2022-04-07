@@ -2,7 +2,7 @@
 
 > This project is created and configured using Yarn, so you might wanna add another dependencies or edit any installed dependencies using Yarn to prevent error and stuff like that.
 
-This Next.js template is using the following system:
+This Website is using the following system:
 
 1. **CSS Framework**: [Tailwind CSS](https://tailwindcss.com/)
 
@@ -35,42 +35,4 @@ This Next.js template is using the following system:
     - To learn more about Prisma: [Click Here](https://prisma.io)
     - To learn how prisma works with Next.js: [Click Here](https://prisma.io/nextjs)
 
-## Scripts / Commands
-
-```bash
-# Linting
-yarn lint
-
-# Building
-yarn build
-
-# Publish
-yarn start
-
-# Developer Mode
-yarn dev
-```
-
-## Preview
-
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/raflymln/nextjs-template/tree/main)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/raflymln/nextjs-template/tree/main&project-name=my-nextjs-project&repository-name=my-nextjs-project)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example https://github.com/raflymln/nextjs-template/tree/main my-nextjs-project
-# or
-yarn create next-app --example https://github.com/raflymln/nextjs-template/tree/main my-nextjs-project
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Template By https://github.com/raflymln
