@@ -5,27 +5,22 @@ export default function Home() {
         {
             label: "Home",
             href: "#",
-            title: "Home",
         },
         {
             label: "Profil",
             href: "#",
-            title: "Profil",
         },
         {
             label: "Video",
             href: "#",
-            title: "Video",
         },
         {
             label: "Kontak",
             href: "#",
-            title: "Kontak",
         },
         {
             label: "Karya",
             href: "#",
-            title: "Karya",
         },
     ];
     const footer = [
@@ -320,7 +315,7 @@ export default function Home() {
                 </div>
             </section>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#111827"  d="M0,96L120,112C240,128,480,160,720,165.3C960,171,1200,149,1320,138.7L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+                <path fill="#111827" d="M0,96L120,112C240,128,480,160,720,165.3C960,171,1200,149,1320,138.7L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
             </svg>
             <footer className="bg-gray-900 " id="footer">
                 <div className="container px-6 py-4 mx-auto">
